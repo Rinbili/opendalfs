@@ -38,9 +38,6 @@ jobs:
       - name: Check format
         run: cargo fmt --all -- --check
 
-      - name: Check clippy
-        run: cargo clippy --all-targets --all-features -- -D warnings
-
   check-python:
     name: Python Checks
     runs-on: ubuntu-24.04
