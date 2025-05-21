@@ -147,7 +147,7 @@ jobs:
           ls -la crates/service-${{ matrix.service }}/dist/
 
       - name: Upload service artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: dist-${{ matrix.os }}-${{ matrix.target }}-${{ matrix.service }}
           path: crates/service-${{ matrix.service }}/dist/*.whl
